@@ -1,6 +1,7 @@
 import React,{ useEffect,useState } from "react";
 import Recipe from "./Recipe";
 import "./App.css";
+import logo from './logo.svg';
 
 
 const App = () => {
@@ -42,10 +43,14 @@ const App = () => {
 
     return <div className="App">
       <form onSubmit={getSearch} className="search-form">
-        <input className="search-bar" type="text" value={search} onChange={updateSearch}/>
-        <button className="search-button" type="submit">
-          Search!
-        </button>
+        <img src={logo} alt="logo" />
+        <div className="search-wrap">
+          <input className="search-bar" type="text" value={search} onChange={updateSearch}/>
+          <button className="search-button" type="submit">
+            Search!
+          </button>
+        </div>
+        <div></div>
       </form>
       <div className="recipes-container">
       {recipes.map(recipes => (

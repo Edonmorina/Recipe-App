@@ -13,22 +13,33 @@
 .search-form {
   min-height: 10vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   margin-bottom: 2.5%;
 }
 
+.search-form img {
+  width: 6rem;
+  height: 6rem;
+}
+
+.search-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 65%;
+}
+
 .search-bar {
-  width: 25%;
+  width: 75%;
   border: none;
   padding: 10px;
 }
 
 .search-button{
   background: lightcoral;
-  max-width: 100%;
   border: none;
-  padding: 10px 20px;
+  width: 25%;
+  padding: 10px;
   color: white;
   cursor: pointer;
   transition: all 0.25s ease-in-out;
